@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen;
+    @apply grid grid-rows-[3rem_auto_3rem];
+  }
+}
