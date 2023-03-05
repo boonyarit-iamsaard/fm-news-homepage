@@ -12,12 +12,11 @@
     --color-tertiary-900: 240deg 100% 5%;
   }
 
-  body,
   #__next {
-    min-height: 100vh;
-  }
-
-  #__next {
-    background-color: hsl(var(--color-tertiary-100));
+    @apply antialiased;
+    @apply min-h-screen;
+    @apply px-4;
+    @apply bg-tertiary-100;
+    @apply text-tertiary-900;
   }
 }

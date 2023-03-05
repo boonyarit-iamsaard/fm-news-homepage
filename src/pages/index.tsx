@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <main className="grid min-h-screen place-items-center space-y-4 p-4 antialiased">
+      <main className="grid min-h-screen place-items-center space-y-4 p-4">
         <div className="w-full max-w-sm space-y-4">
           <div>
             <h1 className="text-heading-xl">Heading XL</h1>

@@ -8,7 +8,7 @@ const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex items-center px-4 py-7">
+    <header className="relative flex items-center py-7">
       <div className="container mx-auto flex max-w-[1100px] items-center justify-between">
         <div className="relative aspect-[65/40] h-7">
           <Image priority src="/images/logo.svg" fill alt="Logo" />
