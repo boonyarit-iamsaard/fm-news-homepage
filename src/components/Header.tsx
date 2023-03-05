@@ -1,15 +1,11 @@
-import { type Dispatch, type FC, type SetStateAction } from 'react';
+import { useState, type FC } from 'react';
 
 import Image from 'next/image';
 
-interface HeaderProps {
-  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
-}
+const Header: FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-const Header: FC<HeaderProps> = ({ setIsMenuOpen }) => {
-  const handleOpenMenu = () => {
-    setIsMenuOpen(true);
-  };
+  console.log('isMenuOpen: ', isMenuOpen);
 
   return (
     <header className="flex items-center px-4 py-7">
@@ -19,7 +15,7 @@ const Header: FC<HeaderProps> = ({ setIsMenuOpen }) => {
         </div>
         <button
           className="relative aspect-[40/17] w-10"
-          onClick={handleOpenMenu}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <Image priority src="/images/icon-menu.svg" fill alt="Menu" />
         </button>
