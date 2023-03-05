@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-primary-400: 35deg 77% 62%;
+    --color-secondary-400: 5deg 85% 63%;
+    --color-tertiary-100: 36deg 100% 99%;
+    --color-tertiary-300: 233deg 8% 79%;
+    --color-tertiary-600: 236deg 13% 42%;
+    --color-tertiary-900: 240deg 100% 5%;
+  }
+
   body,
   #__next {
-    @apply min-h-screen;
+    min-height: 100vh;
   }
 }
