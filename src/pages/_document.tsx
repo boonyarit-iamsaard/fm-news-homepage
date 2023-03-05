@@ -8,7 +8,7 @@ export default function Document() {
           name="description"
           content="This is a solution to the News homepage challenge on Frontend Mentor."
         />
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
