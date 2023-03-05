@@ -1,8 +1,17 @@
+import { useState } from 'react';
+
 import { type NextPage } from 'next';
 
+import { Header } from '@/components';
+
 const Home: NextPage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  console.log('isMenuOpen: ', isMenuOpen);
+
   return (
     <>
+      <Header setIsMenuOpen={setIsMenuOpen} />
       <main className="grid min-h-screen place-items-center space-y-4 p-4 antialiased">
         <div className="w-full max-w-sm space-y-4">
           <div>
